@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>☀️Weather App</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="search-box" id="search-form">
+        <input
+          type="text"
+          class="search-bar"
+          id="search-input"
+          placeholder="Search Location "
+        />
+        <input type="submit" value="Search" class="search-submit" />
+        <button class="current-location-button" id="current-location-button">
+          Current Location
+        </button>
+      </form>
+      <br />
+      <h1>Amazon Lily</h1>
+      <ul class="primaryUl">
+        <li>
+          <span class="units">
+            <a href="#" class="units" id="celsius-link">°C</a> |
+            <a href="#" class="units" id="fahrenheit-link">°F</a>
+          </span>
+        </li>
+        <li class="degrees" id="temperature"></li>
+        <li>Partly Cloudy</li>
+        <li id="date"></li>
+      </ul>
+      <ul class="accordingToNami">
+        <li><strong>According to Nami:</strong></li>
+        <li>Precipitation: 6%</li>
+        <li id="humidity">Humidity: 74%</li>
+        <li>Wind: 10 km/h</li>
+      </ul>
+      <img
+        src="images/rain.png"
+        alt="kawaii rain emoji one piece"
+        class="current-weather-image"
+        width="200px"
+      />
+
+      <div class="future-forecast">
+        <div class="row">
+          <div class="col">
+            <h5>Thursday</h5>
+            <img src="images/snow.png" class="future-forecast-image" />
+            <br />
+            <p>4 °C/-10 °C</p>
+          </div>
+          <div class="col">
+            <h5>Friday</h5>
+            <img src="images/cloudy.png" class="future-forecast-image" />
+            <br />
+            <p>22 °C/20 °C</p>
+          </div>
+          <div class="col">
+            <h5>Saturday</h5>
+            <img src="images/sun.png" class="future-forecast-image" />
+            <br />
+            <p>23 °C/13 °C</p>
+          </div>
+          <div class="col">
+            <h5>Sunday</h5>
+            <img src="images/thunder.png" class="future-forecast-image" />
+            <br />
+            <p>25 °C/15 °C</p>
+          </div>
+          <div class="col">
+            <h5>Monday</h5>
+            <img src="images/sun.png" class="future-forecast-image" />
+            <br />
+            <p>28 °C/17 °C</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Coded by
+
+        <a
+          href="https://www.linkedin.com/in/talia-schaminee-a19024248/"
+          target="_blank"
+          class="footer-link"
+        >
+          Talia Schaminee
+        </a>
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

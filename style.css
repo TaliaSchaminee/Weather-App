@@ -1,0 +1,167 @@
+h1,
+h2 {
+  color: #d37d3c;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  text-align: right;
+  font-size: 35px;
+  margin: -5px 20px 80px 0px;
+  color: #418149;
+}
+
+h2 {
+  color: white;
+  font-size: 22px;
+  text-align: right;
+  margin: -140px 10px 60px 0;
+}
+
+li {
+  color: #418149;
+  font-size: 20px;
+  margin-top: -55px;
+  list-style: none;
+}
+
+.current-location-button {
+  color: #fff;
+  background-color: #418149;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 0px 0px 0px 5px;
+  padding: 4px;
+  border: none;
+}
+
+.current-location-button:hover {
+  color: #fff;
+  background-color: #a9c634;
+  border-radius: 10px;
+  padding: 4px;
+  border: none;
+}
+
+.unit {
+  text-decoration: underline;
+  color: #418149;
+}
+
+.primaryUl {
+  color: red;
+}
+.accordingToNami {
+  font-size: 16px;
+  text-align: right;
+  margin-top: 100px;
+  color: #418149;
+}
+.wind,
+.humidity {
+  color: white;
+  font-size: 16px;
+  text-align: right;
+}
+
+.temperature {
+  padding: 2px;
+}
+.container {
+  background-image: url(images/bgbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  max-width: 650px;
+  max-height: 650px;
+  border-radius: 15px;
+}
+
+.search-box {
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 20px;
+}
+
+.search-bar,
+.search-submit {
+  box-shadow: 3px 3px 1px #a9c634;
+  border: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.current-weather-image {
+  margin: -120px 200px 200px 200px;
+}
+
+.future-forecast {
+  display: block;
+  margin: 0 auto;
+  margin-top: -30px;
+  max-width: 650px;
+}
+
+.col {
+  box-shadow: 3px 3px 1px #a9c634;
+  margin: 15px;
+  border-radius: 10px;
+  background-color: #418149;
+  font-size: 10px;
+}
+
+.col h5 {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 1px;
+  margin: 5px 0 -5px 0;
+}
+
+.col p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 1px;
+  margin: -20px 0 10px 0;
+}
+
+.col:hover {
+  margin: 15px;
+  border-radius: 10px;
+  background-color: #d37d3c;
+  font-size: 10px;
+  color: black;
+}
+
+.future-forecast-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+footer {
+  font-size: 20px;
+  text-align: center;
+  color: #418149;
+  font-weight: bold;
+  padding: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-link {
+  color: #418149;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: #a9c634;
+  text-decoration: none;
+  font-size: large;
+}
