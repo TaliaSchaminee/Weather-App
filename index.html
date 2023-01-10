@@ -17,101 +17,103 @@
   </head>
   <body>
     <div class="container">
-      <form class="search-box" id="search-form">
-        <input
-          type="text"
-          class="search-bar"
-          id="search-input"
-          placeholder="Search Location "
-        />
-        <input type="submit" value="Search" class="search-submit" />
-        <button class="current-location-button" id="current-location-button">
-          Current Location
-        </button>
-      </form>
-      <br />
-      <h1>Amazon Lily</h1>
-      <ul class="primaryUl">
-        <li>
-          <span class="units">
-            <a href="#" class="units" id="celsius-link">°C</a> |
-            <a href="#" class="units" id="fahrenheit-link">°F</a>
-          </span>
-        </li>
-        <li class="degrees" id="temperature"></li>
-        <li>Partly Cloudy</li>
-        <li id="date"></li>
-      </ul>
-      <div class="col-md-6">
-        <ul class="accordingToNami">
-          <li>According to Nami:</li>
-          <li id="precipitation">Precipitation: 6%</li>
-          <li id="humidity">Humidity: 74%</li>
-          <li id="wind">Wind: 10 km/h</li>
+      <div class="weather-app">
+        <form class="search-box" id="search-form">
+          <input
+            type="text"
+            class="search-bar"
+            id="search-input"
+            placeholder="Search Location "
+          />
+          <input type="submit" value="Search" class="search-submit" />
+          <button class="current-location-button" id="current-location-button">
+            Current Location
+          </button>
+        </form>
+        <br />
+        <h1>Amazon Lily</h1>
+        <ul class="primaryUl">
+          <li>
+            <span class="units">
+              <a href="#" class="units" id="celsius-link">°C</a> |
+              <a href="#" class="units" id="fahrenheit-link">°F</a>
+            </span>
+          </li>
+          <li class="degrees" id="temperature"></li>
+          <li>Partly Cloudy</li>
+          <li id="date"></li>
         </ul>
-      </div>
-      <img
-        src="images/rain.png"
-        alt="kawaii rain emoji one piece"
-        class="current-weather-image"
-        width="200px"
-      />
+        <div class="col-md-6">
+          <ul class="accordingToNami">
+            <li>According to Nami:</li>
+            <li id="precipitation">Precipitation: 6%</li>
+            <li id="humidity">Humidity: 74%</li>
+            <li id="wind">Wind: 10 km/h</li>
+          </ul>
+        </div>
+        <img
+          src="images/rain.png"
+          alt="kawaii rain emoji one piece"
+          class="current-weather-image"
+          width="200px"
+        />
 
-      <div class="future-forecast">
-        <div class="row">
-          <div class="col">
-            <h5>Thursday</h5>
-            <img src="images/snow.png" class="future-forecast-image" />
-            <br />
-            <p>4 °C/-10 °C</p>
-          </div>
-          <div class="col">
-            <h5>Friday</h5>
-            <img src="images/cloudy.png" class="future-forecast-image" />
-            <br />
-            <p>22 °C/20 °C</p>
-          </div>
-          <div class="col">
-            <h5>Saturday</h5>
-            <img src="images/sun.png" class="future-forecast-image" />
-            <br />
-            <p>23 °C/13 °C</p>
-          </div>
-          <div class="col">
-            <h5>Sunday</h5>
-            <img src="images/thunder.png" class="future-forecast-image" />
-            <br />
-            <p>25 °C/15 °C</p>
-          </div>
-          <div class="col">
-            <h5>Monday</h5>
-            <img src="images/sun.png" class="future-forecast-image" />
-            <br />
-            <p>28 °C/17 °C</p>
+        <div class="future-forecast">
+          <div class="row">
+            <div class="col">
+              <h5>Thursday</h5>
+              <img src="images/snow.png" class="future-forecast-image" />
+              <br />
+              <p>4 °C/-10 °C</p>
+            </div>
+            <div class="col">
+              <h5>Friday</h5>
+              <img src="images/cloudy.png" class="future-forecast-image" />
+              <br />
+              <p>22 °C/20 °C</p>
+            </div>
+            <div class="col">
+              <h5>Saturday</h5>
+              <img src="images/sun.png" class="future-forecast-image" />
+              <br />
+              <p>23 °C/13 °C</p>
+            </div>
+            <div class="col">
+              <h5>Sunday</h5>
+              <img src="images/thunder.png" class="future-forecast-image" />
+              <br />
+              <p>25 °C/15 °C</p>
+            </div>
+            <div class="col">
+              <h5>Monday</h5>
+              <img src="images/sun.png" class="future-forecast-image" />
+              <br />
+              <p>28 °C/17 °C</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <footer>
-      <p>
-        Coded by
+      <footer>
+        <p>
+          Coded by
 
-        <a
-          href="https://www.linkedin.com/in/talia-schaminee-a19024248/"
-          target="_blank"
-          class="footer-link"
-        >
-          Talia Schaminee
-        </a>
-        <a
-          href="https://github.com/TaliaSchaminee/Weather-App"
-          target="_blank"
-          class="footer-github"
-        >
-          open-source code
-        </a>
-      </p>
-    </footer>
+          <a
+            href="https://www.linkedin.com/in/talia-schaminee-a19024248/"
+            target="_blank"
+            class="footer-link"
+          >
+            Talia Schaminee
+          </a>
+          <a
+            href="https://github.com/TaliaSchaminee/Weather-App"
+            target="_blank"
+            class="footer-github"
+          >
+            open-source code
+          </a>
+        </p>
+      </footer>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>

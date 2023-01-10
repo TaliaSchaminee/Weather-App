@@ -67,7 +67,7 @@ li {
 .temperature {
   padding: 2px;
 }
-.container {
+.weather-app {
   background-image: url(images/bgbg.png);
   background-repeat: no-repeat;
   background-size: cover;
