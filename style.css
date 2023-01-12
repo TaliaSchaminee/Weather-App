@@ -36,19 +36,20 @@ li {
 .primaryUl {
   color: #418149;
 }
-.current-weather-image {
-  margin: -120px 200px 200px 200px;
-}
 
 .degrees {
   font-size: 24px;
-  margin-top: 5px;
+  margin-top: 1px;
   font-weight: 500;
 }
 
-.unit {
-  text-decoration: underline;
+.units {
   color: #418149;
+  position: relative;
+  font-size: 12px;
+  text-decoration: none;
+  top: -10px;
+  font-weight: 500;
 }
 .current-location-button {
   color: #fff;
@@ -84,6 +85,10 @@ li {
 
 .temperature {
   padding: 2px;
+}
+
+.current-weather-image {
+  margin: -120px 200px 200px 200px;
 }
 
 .search-box {
