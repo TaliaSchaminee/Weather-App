@@ -91,6 +91,10 @@ li {
   margin: -120px 200px 200px 200px;
 }
 
+.description {
+  text-transform: capitalize;
+}
+
 .search-box {
   text-align: center;
   padding: 15px;

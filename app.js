@@ -23,27 +23,36 @@ let day = days[now.getDay()];
 currentDay.innerHTML = `${day} ${hour}:${minute} `;
 
 // search submit - change h1 city name input and temperature of location
+function showTemperature(response) {
+  console.log(response);
+  let cityElement = document.querySelector("h1");
+  cityElement.innerHTML = response.data.name;
+  let temperature = Math.round(response.data.main.temp);
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = `${temperature}`;
+  console.log(response.data.main.feels_like);
+  let feelslike = Math.round(response.data.main.feels_like);
+  let feelslikeElement = document.querySelector("#feelsLike");
+  feelslikeElement.innerHTML = `Feels like: ${feelslike} °C`;
+  let humidity = Math.round(response.data.main.humidity);
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = `Humidity: ${humidity}%`;
+  let wind = Math.round(response.data.wind.speed);
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = `Wind: ${wind} km/h`;
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.weather[0].description;
+}
+
 function searchEngine(event) {
   event.preventDefault();
   let city = document.querySelector("#search-input");
-  let location = document.querySelector("h1");
-  location.innerHTML = `${city.value}`;
   let apiKey = "b146a168d6fecbebeaa5d18c4b51fce1";
   let apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
   let unit = "metric";
   axios
     .get(`${apiUrl}${city.value}&appid=${apiKey}&units=${unit}`)
     .then(showTemperature);
-}
-
-function showTemperature(response) {
-  console.log(response);
-  let temperature = Math.round(response.data.main.temp);
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = `${temperature}`;
-  let humidity = Math.round(response.data.main.humidity);
-  let humidityElement = document.querySelector("#humidity");
-  humidityElement.innerHTML = `Humidity: ${humidity}%`;
 }
 
 let searchForm = document.querySelector("#search-form");
