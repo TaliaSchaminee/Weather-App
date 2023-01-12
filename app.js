@@ -40,7 +40,7 @@ function showTemperature(response) {
   console.log(response);
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = `${temperature} °C`;
+  temperatureElement.innerHTML = `${temperature}`;
   let humidity = Math.round(response.data.main.humidity);
   let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = `Humidity: ${humidity}%`;
@@ -51,21 +51,21 @@ searchForm.addEventListener("submit", searchEngine);
 
 // celsuis fahrenheit link temperature
 
-function calculateCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 20;
-}
+//function calculateCelsius(event) {
+//event.preventDefault();
+//let temperatureElement = document.querySelector("#temperature");
+//temperatureElement.innerHTML = 20;
+//}
 
-function calculateFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
+//function calculateFahrenheit(event) {
+//event.preventDefault();
+//let temperatureElement = document.querySelector("#temperature");
 
-  temperatureElement.innerHTML = (temperature * 9) / 5 + 32;
-}
+//temperatureElement.innerHTML = (temperature * 9) / 5 + 32;
+//}
 
-let celsius = document.querySelector("#celsius-link");
-celsius.addEventListener("click", calculateCelsius);
+//let celsius = document.querySelector("#celsius-link");
+//celsius.addEventListener("click", calculateCelsius);
 
-let fahrenheit = document.querySelector("#fahrenheit-link");
-fahrenheit.addEventListener("click", calculateFahrenheit);
+//let fahrenheit = document.querySelector("#fahrenheit-link");
+//fahrenheit.addEventListener("click", calculateFahrenheit);

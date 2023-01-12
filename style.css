@@ -18,12 +18,12 @@ h1 {
   font-size: 30px;
   font-weight: 100;
   line-height: 28px;
-  margin: 0px 0px 110px 0px;
+  margin: 0px 0px 50px 0px;
 }
 
 ul {
-  margin: 0px;
   padding: 0px;
+  margin-top: -15px;
 }
 
 li {
@@ -33,6 +33,23 @@ li {
   list-style: none;
 }
 
+.primaryUl {
+  color: #418149;
+}
+.current-weather-image {
+  margin: -120px 200px 200px 200px;
+}
+
+.degrees {
+  font-size: 24px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.unit {
+  text-decoration: underline;
+  color: #418149;
+}
 .current-location-button {
   color: #fff;
   background-color: #418149;
@@ -51,15 +68,10 @@ li {
   border: none;
 }
 
-.unit {
-  text-decoration: underline;
-  color: #418149;
-}
-
 .accordingToNami {
   font-size: 16px;
   text-align: left;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-left: 400px;
   color: #418149;
 }
@@ -89,10 +101,6 @@ li {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 5px;
   border-radius: 10px;
-}
-
-.current-weather-image {
-  margin: -120px 200px 200px 200px;
 }
 
 .future-forecast {
@@ -131,7 +139,6 @@ li {
   border-radius: 10px;
   background-color: #d37d3c;
   font-size: 10px;
-  color: black;
 }
 
 .future-forecast-image {
