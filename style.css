@@ -44,13 +44,23 @@ li {
 }
 
 .units {
-  color: #418149;
   position: relative;
-  font-size: 12px;
-  text-decoration: none;
+  font-size: 21px;
   top: -10px;
+  text-decoration: none;
+  color: #418149;
+}
+
+.units .active {
+  text-decoration: none;
+  color: #418149;
   font-weight: 500;
 }
+.units .active:hover {
+  text-decoration: dotted;
+  color: #d37d3c;
+}
+
 .current-location-button {
   color: #fff;
   background-color: #418149;
