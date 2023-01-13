@@ -63,7 +63,29 @@ function searchEngine(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchEngine);
 
-// celsuis fahrenheit link temperature
+// current location submit
+
+function getCurrentLocation(position) {
+  console.log(position);
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiKey1 = "b146a168d6fecbebeaa5d18c4b51fce1";
+  let apiUrl1 = "http://api.openweathermap.org/data/2.5/weather?";
+  let unit = "metric";
+  axios
+    .get(`${apiUrl1}lat=${lat}&lon=${lon}&appid=${apiKey1}&units=${unit}`)
+    .then(showTemperature);
+}
+
+function retrieveCurrentLocation() {
+  console.log(navigator.geolocation);
+  navigator.geolocation.getCurrentPosition(getCurrentLocation);
+}
+
+let locationButton = document.querySelector("#current-location-button");
+locationButton.addEventListener("click", retrieveCurrentLocation);
+
+//celsuis fahrenheit link temperature
 
 //function calculateCelsius(event) {
 //event.preventDefault();
