@@ -26,22 +26,27 @@ currentDay.innerHTML = `${day} ${hour}:${minute} `;
 function showTemperature(response) {
   console.log(response);
   let cityElement = document.querySelector("h1");
-  cityElement.innerHTML = response.data.name;
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = `${temperature}`;
-  console.log(response.data.main.feels_like);
   let feelslike = Math.round(response.data.main.feels_like);
   let feelslikeElement = document.querySelector("#feelsLike");
-  feelslikeElement.innerHTML = `Feels like: ${feelslike} °C`;
   let humidity = Math.round(response.data.main.humidity);
   let humidityElement = document.querySelector("#humidity");
-  humidityElement.innerHTML = `Humidity: ${humidity}%`;
   let wind = Math.round(response.data.wind.speed);
   let windElement = document.querySelector("#wind");
-  windElement.innerHTML = `Wind: ${wind} km/h`;
   let descriptionElement = document.querySelector("#description");
+  let iconElement = document.querySelector("#icon");
+
+  cityElement.innerHTML = response.data.name;
+  temperatureElement.innerHTML = `${temperature}`;
+  feelslikeElement.innerHTML = `Feels like: ${feelslike} °C`;
+  humidityElement.innerHTML = `Humidity: ${humidity}%`;
+  windElement.innerHTML = `Wind: ${wind} km/h`;
   descriptionElement.innerHTML = response.data.weather[0].description;
+  iconElement.setAttribute(
+    "src",
+    `images/${response.data.weather[0].icon}.png`
+  );
 }
 
 function searchEngine(event) {
