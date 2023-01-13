@@ -22,6 +22,35 @@ let day = days[now.getDay()];
 
 currentDay.innerHTML = `${day} ${hour}:${minute} `;
 
+// forecast dates
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+       <div class="col-2">
+         <div class="weather-forecast-date">${day}</div>
+          <img
+            src="images/11d.png"
+           alt="description of weather icon"
+           width="50"
+          />
+          <div class="weather-forecast-temperature">
+            <span class="weather-forecast-temperature-max"> 18 </span> |
+            <span class="weather-forecast-temperature-min"> 12 </span>
+          </div> 
+         </div>
+        `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 // search submit - change h1 city name input and temperature of location
 function showTemperature(response) {
   console.log(response);
@@ -102,6 +131,7 @@ function showCelsiusTemperature(event) {
 }
 
 let celsiusTemperature = null;
+displayForecast();
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);

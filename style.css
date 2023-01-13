@@ -6,8 +6,8 @@
   margin: 0 auto;
   margin-top: 50px;
   padding: 20px;
-  max-width: 650px;
-  max-height: 650px;
+  max-width: 600px;
+  max-height: 600px;
   border-radius: 10px;
   border: 1px solid #dadde1;
 }
@@ -82,8 +82,8 @@ li {
 .accordingToNami {
   font-size: 16px;
   text-align: left;
-  margin-top: 60px;
-  margin-left: 400px;
+  margin-top: 130px;
+  margin-left: 0px;
   color: #418149;
 }
 .wind,
@@ -98,7 +98,7 @@ li {
 }
 
 .current-weather-image {
-  margin: -120px 200px 200px 200px;
+  margin: -200px 200px 200px 200px;
 }
 
 .description {
@@ -189,4 +189,14 @@ footer {
 .footer-github {
   color: #418149;
   text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
 }
