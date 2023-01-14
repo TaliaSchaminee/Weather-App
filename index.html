@@ -27,20 +27,20 @@
             type="text"
             class="search-bar"
             id="search-input"
-            placeholder="Search Location "
+            placeholder=" search location"
           />
-          <input type="submit" value="Search" class="search-submit" />
+          <input type="submit" value="search" class="search-submit" />
           <button class="current-location-button" id="current-location-button">
             Current Location
           </button>
         </form>
-        <h1 id="city">Amazon Lily</h1>
+        <h1 id="city">Sabaody Archipelago</h1>
         <ul class="primaryUl">
           <li id="date"></li>
 
           <div class="d-flex weather-temperature">
             <div>
-              <strong class="degrees" id="temperature">Temperature</strong
+              <strong class="degrees" id="temperature">10</strong
               ><span class="units">
                 <a href="#" id="celsius-link" class="active"> °C </a>|
                 <a href="#" id="fahrenheit-link" class="active">°F </a>
@@ -49,41 +49,34 @@
           </div>
         </ul>
         <ul class="accordingToNami">
-          <li id="wind">Wind: 10 km/h</li>
-          <li id="humidity">Humidity: 74%</li>
-          <li id="feelsLike">Feels like: °C</li>
-          <li class="description" id="description">Partly Cloudy</li>
-          <li class="nami-says">Nami Says</li>
+          <li class="description" id="description">Mist</li>
+          <li id="wind">Wind: 15 km/h</li>
+          <li id="humidity">Humidity: 99%</li>
+          <li id="feelsLike">Feels like: 6°C</li>
+
+          <li class="nami-says">According to Nami</li>
         </ul>
 
         <img
-          src="images/sun.png"
+          src="images/11n.png"
           alt="kawaii one piece current weathere icon"
           class="current-weather-image"
-          width="150px"
+          width="180px"
           id="icon"
         />
-        <div class="weather-forecast" id="forecast">
-          <div class="row">
-            <div class="col-2">
-              <div class="weather-forecast-date">Thu</div>
-              <img
-                src="images/01d.png"
-                alt="description of weather icon"
-                width="50"
-              />
-              <div class="weather-forecast-temperature">
-                <span class="weather-forecast-temperature-max"> 18 </span> |
-                <span class="weather-forecast-temperature-min"> 12 </span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </div>
 
       <footer>
         <p>
-          Coded by
+          <a
+            href="https://github.com/TaliaSchaminee/Weather-App"
+            target="_blank"
+            class="footer-github"
+          >
+            Open-source code
+          </a>
+          by
 
           <a
             href="https://www.linkedin.com/in/talia-schaminee-a19024248/"
@@ -91,13 +84,6 @@
             class="footer-link"
           >
             Talia Schaminee
-          </a>
-          <a
-            href="https://github.com/TaliaSchaminee/Weather-App"
-            target="_blank"
-            class="footer-github"
-          >
-            open-source code
           </a>
         </p>
       </footer>
