@@ -55,14 +55,15 @@ function displayForecast(response) {
             src="images/${forecastDay.weather[0].icon}.png"
            alt="description of weather icon"
            width="50"
+           class="future-forecast-image"
           />
           <div class="weather-forecast-temperature">
-            <span class="weather-forecast-temperature-max"> ${Math.round(
+            <span class="weather-forecast-temperature-max"> <strong> ${Math.round(
               forecastDay.temp.max
-            )}° </span> |
-            <span class="weather-forecast-temperature-min"> ${Math.round(
-              forecastDay.temp.min
-            )}° </span>
+            )}° </strong> </span>  
+               <span class="weather-forecast-temperature-min"> ${Math.round(
+                 forecastDay.temp.min
+               )}° </span>
           </div> 
          </div>
         `;
