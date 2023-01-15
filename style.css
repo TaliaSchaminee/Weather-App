@@ -1,8 +1,8 @@
 body {
-  background-image: url(sunset2.gif);
-  background-repeat: no-repeat;
+  background-image: url(sunnyclouds.gif);
+  background-repeat: inherit;
+  background-position-y: 58rem;
   background-size: cover;
-  background-position-x: 50%;
 }
 
 .weather-app {
