@@ -1,3 +1,10 @@
+body {
+  background-image: url(sunnyclouds.gif);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
 .weather-app {
   background-image: url(images/bgbg.png);
   background-repeat: no-repeat;
