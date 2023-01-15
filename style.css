@@ -1,12 +1,9 @@
 body {
-  background-image: url(sunnyclouds.gif);
-  background-repeat: inherit;
-  background-position-y: 58rem;
-  background-size: cover;
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
 .weather-app {
-  background-image: url(images/bgbg.png);
+  background-image: url(boom.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -18,10 +15,12 @@ body {
   border-radius: 10px;
   border: 1px solid #dadde1;
 }
-
+.container {
+  margin-top: -35px;
+}
 h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #418149;
+  color: #fff;
   margin-top: -50px;
   font-size: 30px;
   font-weight: 100;
@@ -35,14 +34,14 @@ ul {
 }
 
 li {
-  color: #418149;
+  color: #fff;
   font-size: 20px;
   margin-top: -50px;
   list-style: none;
 }
 
 .primaryUl {
-  color: #418149;
+  color: #fff;
 }
 
 .degrees {
@@ -56,7 +55,7 @@ li {
   font-size: 21px;
   top: -10px;
   text-decoration: none;
-  color: #418149;
+  color: #d37d3c;
 }
 
 .units .active {
@@ -117,6 +116,7 @@ li {
   border: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 7px;
+  text-transform: capitalize;
   font-size: 16px;
   opacity: 0.6;
   color: black;
@@ -133,11 +133,10 @@ li {
 .col-2 {
   margin: 5px;
   border-radius: 10px;
-  background-color: #a9c634;
+  background-color: #6fcdf4;
   font-size: 14px;
   margin-left: 12px;
   padding: 5px;
-  border-color: #a9c634;
 }
 
 .weather-forecast-date {
@@ -155,7 +154,7 @@ li {
 }
 
 .col-2:hover {
-  background-color: #d37d3c;
+  background-color: #38adef;
 }
 
 .future-forecast-image {
