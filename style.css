@@ -228,3 +228,107 @@ footer {
   font-weight: 500;
   text-transform: capitalize;
 }
+
+footer p {
+  background-color: rgba(111, 205, 244, 0.8);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  body {
+    background-size: 772px 700px;
+    background-position: 90%;
+  }
+  .weather-app {
+    margin: 70px 0px 0px 0px;
+    max-width: 355px;
+    max-height: 700px;
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: 50%;
+    padding-top: 1px;
+  }
+
+  .row {
+    margin-top: -40px;
+  }
+  .search-bar,
+  .search-submit {
+    font-size: 12px;
+  }
+
+  .current-location-button-img {
+    width: 60px;
+  }
+
+  .degrees {
+    font-size: 20px;
+  }
+
+  .units {
+    font-size: 12px;
+  }
+  .search-box {
+    padding: 0px;
+  }
+
+  .current-weather-image {
+    margin: -170px 100px 180px 130px;
+    width: 70px;
+  }
+
+  .accordingToNami {
+    margin-left: 100px;
+    margin-top: 32px;
+    line-height: 2.8;
+    text-align: right;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .description-weather {
+    font-size: 12px;
+  }
+  .nami-says {
+    font-size: 12px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  .weather-forecast {
+    margin-top: 0px;
+    font-size: 10px;
+  }
+
+  .weather-forecast-date {
+    font-size: 10px;
+  }
+
+  .weather-forecast-temperature {
+    font-size: 10px;
+  }
+
+  .future-forecast-image {
+    width: 40px;
+  }
+
+  .col-2 {
+    margin-left: auto;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+}
